@@ -1,0 +1,19 @@
+
+### **File 6: `vercel.json`** (NEW - For Vercel deployment)
+```json
+{
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "name": "sentinel-dr",
+  "version": 2
+}
